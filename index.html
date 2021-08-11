@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Formulario - Antony</title>
+	
+	<style>
+		h1 {
+			cursor: default;
+			font-size: 32px;
+			font-weight: 400;
+			line-height: 40px;
+			color: #202124;
+		}
+		
+		p {
+			cursor: default;
+			font-size: 14px;
+			letter-spacing: .2px;
+			line-height: 20px;
+			color: #141415;
+		}
+		
+		.caja {
+			background: none;
+			color: #313131;
+			font-size: 14px;
+			padding-bottom: 2px;
+			display: block;
+			border-style: none;
+			border-bottom: 1px solid #676767;
+		}
+		
+		input:focus {
+			outline: none;
+		}
+		
+		small {
+			font-size: 14px;
+		}
+		
+		label {
+			letter-spacing: .2px;
+			color: #202124;
+			display: flex;
+			align-items: center;
+		}
+		
+		strong {
+			cursor: default;
+			font-size: 16px;
+			font-weight: 500;
+			letter-spacing: .1px;
+			color: #202124;
+		}
+		
+		button {
+			padding: 6px 20px;
+			font-size: 14px;
+			font-weight: bold;
+			background: transparent;
+			color: white;
+			cursor: pointer;
+			border-style: none;
+			border: 2px solid #673ab7;
+			color: #673ab7;
+			border-radius: 8px;
+			transition: all .5s ease;
+		}
+
+		button:hover {
+			background: #673ab7;
+			color: white;
+			box-shadow: 6px 6px 30px #673ab770;
+		}
+		
+		footer {
+			padding: 3px 25px;
+		}
+
+		footer p {
+			font-size: 11px;
+			color: #484848c9;
+		}
+
+		footer h4 {
+			font-weight: bold;
+			margin: 17px 0;
+			font-size: 18px;
+			color: #48484861;
+		}
+
+		footer span {
+			color: #48484861;
+			font-weight: 500;
+		}
+		
+		/*img {
+			width: 640px;
+			max-width: 86.6vw;
+			border-radius: 8px;
+		}*/
+		
+		img {
+			width: 100%;
+			border-radius: 8px;
+		}
+		
+		input[type="checkbox"] {
+			width: 20px;
+			height: 20px;
+			margin: 0 9px 0 0;
+			vertical-align: sub;
+		}
+		
+		input[type="radio"] {
+			width: 20px;
+			height: 20px;
+			margin: 0 9px 0 0;
+		}
+		
+		input[type="radio"]:checked:before {
+			content: '';
+			position: relative;
+			width: 16px;
+			height: 16px;
+			border-radius: 15px;
+			background-color: white;
+			display: inline-block;
+			border: 2px solid #5f6368;
+		}
+		
+		input[type="radio"]:checked:after {
+			content: '';
+			position: relative;
+			width: 10px;
+			height: 10px;
+			top: -20px; /*18*/
+			left: 5px;
+			border-radius: 15px;
+			background-color: #5f6368;
+			display: inline-block;
+		}
+		
+		.table-img {
+			padding: 0 12px;
+		}
+	</style>
+	
+</head>
+<body bgcolor="#f3ece6" style="font-family: 'Poppins', sans-serif;">
+	
+	<table class="table-img" align="center" cellpadding="0" cellspacing="0" style="width: 663px; max-width: 90vw;">
+		<tr>
+			<td>
+				<img src="https://lh6.googleusercontent.com/ae92V4F-45yGhBiaiTbYwNtPjGCU8f6_NvgZlGONqPirL8ozFpE87VHxLYbuywGysE0ip3VJIfZp64c2kMVzWn9mwlxEPgGR8KJjIPFYgIXi9SoNhH4ZeWRJbGWQk187lA=w1200" alt="antony">
+			</td>
+		</tr>
+	</table>
+
+	<form id="form" name="form" method="post">
+		<table align="center" cellpadding="30" cellspacing="12" style="width: 663px; max-width: 90vw;">
+			<tbody>
+      		    <tr>
+        			<td bgcolor="white" style="border-radius: 8px; border-top: 10px solid #863e04;">
+						<h1>Examen - Módulos 1 - 4 de CCNA 2 v7 - DISEÑO REDES WAN WIRELES</h1>
+						<p><b>*</b> Lea correctamente las preguntas y responda.<br><b>*</b> Cual quier intento de plagio sera anulado su examen</p>
+					</td>
+      			</tr>
+				
+				<tr>
+					<td bgcolor="white" style="border-radius: 8px; border: 1px solid #dadce0;">
+						<strong>Apellidos y Nombre <span style="color: #dc0202">*</span></strong>
+						<br><br>
+						<input class="caja" type="text" size="33" required>
+					</td>
+				</tr>
+				
+				<tr>
+					<td bgcolor="white" style="border-radius: 8px; border: 1px solid #dadce0;">
+						<strong>Correo electrónico <span style="color: #dc0202">*</span></strong>
+						<br><br>
+						<input class="caja" type="email" size="33" required>
+					</td>
+				</tr>
+				
+				<tr>
+        			<td bgcolor="white" style="border-radius: 8px; border: 1px solid #dadce0;">
+						<strong>1.- ¿Qué debe tener un administrador para restablecer una contraseña perdida en un enrutador? <span style="color: #dc0202">*</span></strong><br><br>
+
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup1">
+							</p>
+							<small>Un servidor TFTP</small>
+						</label>
+
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup1">
+							</p>
+							<small>Un cable cruzado</small>
+						</label>
+				
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup1">
+							</p>
+							<small>Acceso a otro enrutador</small>
+						</label>
+				
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup1">
+							</p>
+							<small>Acceso físico al enrutador</small>
+						</label>
+					</td>
+      			</tr>
+				
+				<tr>
+        			<td bgcolor="white" style="border-radius: 8px; border: 1px solid #dadce0;">
+						<strong>2.- ¿Qué característica describe la conmutación por corte? <span style="color: #dc0202">*</span></strong><br><br>
+						
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup2">
+							</p>
+							<small>Los fragmentos sin errores se reenvían, por lo que la conmutación se produce con menor latencia.</small>
+						</label>
+						
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup2">
+							</p>
+							<small>Las tramas se reenvían sin ninguna comprobación de errores.</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup2">
+							</p>
+							<small>Solo se comprueban los errores de los marcos salientes.</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup2">
+							</p>
+							<small>El almacenamiento en búfer se utiliza para admitir diferentes velocidades de Ethernet.</small>
+						</label>
+					</td>
+      			</tr>
+				
+				<tr>
+        			<td bgcolor="white" style="border-radius: 8px; border: 1px solid #dadce0;">
+						<strong>3.- ¿Cuál es una característica de una interfaz de bucle invertido IPv4 en un enrutador Cisco IOS? <span style="color: #dc0202">*</span></strong><br><br>
+
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup3">
+							</p>
+							<small>Se requiere el comando no shutdown para colocar esta interfaz en un estado ARRIBA</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup3">
+							</p>
+							<small>Es una interfaz lógica interna del enrutador.</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup3">
+							</p>
+							<small>Solo se puede habilitar una interfaz de bucle invertido en un enrutador.</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup3">
+							</p>
+							<small>Solo se puede habilitar una interfaz de bucle invertido en un enrutador.</small>
+						</label>
+					</td>
+      			</tr>
+				
+      			<tr>
+        			<td bgcolor="white" style="border-radius: 8px; border: 1px solid #dadce0;">
+						<strong>4.- ¿Qué comando se usa para configurar la variable de entorno BOOT que define dónde encontrar el archivo de imagen IOS en un conmutador? <span style="color: #dc0202">*</span></strong><br><br>
+
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup4">
+							</p>
+							<small>Config-register</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup4">
+							</p>
+							<small>Sistema de arranque</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup4">
+							</p>
+							<small>Cargador de arranque</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="radio" name="RadioGroup4">
+							</p>
+							<small>Confreg</small>
+						</label>
+					</td>
+      			</tr>
+				
+      			<tr>
+        			<td bgcolor="white" style="border-radius: 8px; border: 1px solid #dadce0;">
+						<strong>5.- ¿Cuál es la primera acción en la secuencia de inicio cuando se enciende un conmutador? <span style="color: #dc0202">*</span></strong><br><br>
+
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox5">
+							</p>
+							<small>Cargar un programa de autoprueba de encendido</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox5">
+							</p>
+							<small>Inicialización de CPU de bajo nivel</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox5">
+							</p>
+							<small>Cargar el software Cisco IOS predeterminado</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox5">
+							</p>
+							<small>Cargar el software del cargador de arranque</small>
+						</label>
+					</td>
+      			</tr>
+				
+      			<tr>
+        			<td bgcolor="white" style="border-radius: 8px; border: 1px solid #dadce0;">
+						<strong>6.- ¿Cuál es el tamaño mínimo de trama Ethernet que el receptor no descartará como trama runt? <span style="color: #dc0202">*</span></strong><br><br>
+
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox6">
+							</p>
+							<small>64 bytes</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox6">
+							</p>
+							<small>512 bytesl</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox6">
+							</p>
+							<small>1024 bytes</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox6">
+							</p>
+							<small>1500 bytes</small>
+						</label>
+					</td>
+      			</tr>
+				
+ 				<tr>
+        			<td bgcolor="white" style="border-radius: 8px; border: 1px solid #dadce0;">
+						<strong>7.- ¿Qué comando muestra información sobre la configuración de auto-MDIX para una interfaz específica? <span style="color: #dc0202">*</span></strong><br><br>
+						
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox7">
+							</p>
+							<small>Mostrar Interfaces</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox7">
+							</p>
+							<small>Mostrar controladores</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox7">
+							</p>
+							<small>Mostrar Procesos</small>
+						</label>
+							
+						<label>
+							<p style="line-height: 0px;">
+								<input type="checkbox" name="checkbox7">
+							</p>
+							<small>Mostrar la configuración en ejecución</small>
+						</label>
+					</td>
+      			</tr>
+    		</tbody>
+		</table>
+		
+		<table align="center" cellpadding="0" cellspacing="12" style="width: 663px; max-width: 90vw;">
+			<tr>
+				<td>
+					<button style="margin-left: 2px;">Enviar</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<footer align="center">
+		<p>Antony creó y aprobó este contenido. - Condiciones del Servicio - Política de Privacidad</p>
+		<h4>Antony <span>Formulario</span></h4>
+	</footer>
+	
+</body>
+</html>
